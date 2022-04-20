@@ -2,10 +2,10 @@
 const connect = require("./client");
 const setupInput = require("./input");
 
-console.log("Connecting...");
-connect();
+//console.log("Connecting...");
+// connect();
 
-setupInput();
+// setupInput();
 
 // const handleUserInput = function(data) {
 //   if (data === '\u0003')
@@ -29,8 +29,7 @@ setupInput();
 
 console.log("connecting...");
 
-connect();
-setupInput();
+setupInput(connect());
 
 
 

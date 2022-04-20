@@ -8,10 +8,7 @@ const connect = function() {
   });
 
   conn.on('connect', () => {
-    // setTimeout(() => conn.write("Move: up"), 50);
-    // setTimeout(() => conn.write("Move: left"), 100);
-    // conn.write("Move: up");
-    // conn.write("Move: left");
+ 
     conn.write("Name: 420")
   
   });
