@@ -1,26 +1,12 @@
-const net = require("net");
-const {connect} = require("./client.js");
+
+const connect = require("./client");
 
 
-//establishes a connection with the game server
-//const connect = function() {
-//   const conn = net.createConnection({
-//     host: '10.0.2.15',
-//     port: 50541,
-//   });
-//   conn.on('data', () => {
-//     console.log('you ded cuz you idled');
-//   });
-
-//   //interpret incoming data as text
-//   conn.setEncoding("utf8");
-  
-  
-//   return conn;
-// };
 
 console.log("connecting...");
 connect();
 
-
-//exports.conn = conn;
+const bily = connect()
+bily.on('connect', () => {
+  console.log("Successfully connected to game server");
+});
